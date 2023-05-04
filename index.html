@@ -35,12 +35,12 @@
                     // twerk the mouse
                     this.tweens.add({
                         targets: this.meep,
-                        angle: {from: -5, to: 0},
+                        angle: {from: -50, to: 50},
                         duration: 250
                     });
 
                     // spawn a dropping
-                    let dropping = this.add.circle(x+10,y+10,2).setFillStyle(0,1);
+                    let dropping = this.add.circle(x+10,y+10,2).setFillStyle(0,10);
                     dropping.setDepth(-1); // below the mouse
 
                     // shoot away quickly
@@ -65,10 +65,10 @@
             }
         }
         let game = new Phaser.Game({
-            width: 640,
-            height: 520,
+            width: 1920,
+            height: 1280,
             scene: Demo,
-            backgroundColor: 0xdddddd,
+            backgroundColor: 0x9F2B68,
             parent: 'here'
         });
     </script>
